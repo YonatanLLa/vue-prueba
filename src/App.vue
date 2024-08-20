@@ -70,4 +70,16 @@ onMounted(() => {
 .card p {
   margin: 4px 0;
 }
+
+@media screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+} 
 </style>
